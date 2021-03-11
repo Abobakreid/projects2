@@ -1,0 +1,1083 @@
+
+/* start the navbar*/
+
+.nav
+{
+	height: 70px;
+	background-color: teal;
+	color: white;
+	padding: 10px 0;
+}
+
+.nav .container .brand h5
+{
+	margin: 0;
+	font-size: 45px;
+}
+
+.nav .container .brand h5 a
+{
+	display: inline-block;
+	color: white;
+}
+
+
+.nav .container .links ul li a
+{
+	color: white;
+	width: 100%;
+	height: 100%;
+   padding: 16px 5px;
+	text-transform: capitalize;   
+	-webkit-transition: all .7s ease-in-out;
+        transition: all .7s ease-in-out; 
+}
+
+.nav .container .links ul li:hover a
+{
+  color: teal;
+  padding-top: 10;
+  background-color: white;
+  -webkit-border-radius: 0 10px;
+     -moz-border-radius: 0 10px;
+        border-radius: 0 10px;  
+	-webkit-transition: all .7s ease-in-out;
+	        transition: all .7s ease-in-out;  
+}
+
+.nav .container .links ul li.active a
+{
+	color: teal;
+	background-color: white;
+   -webkit-border-radius: 10px 0;
+      -moz-border-radius: 10px 0;	
+	        border-radius: 10px 0;	
+}
+
+.nav .container .bar
+{
+	height: 100%;
+	float: right;
+    padding: 5px 0;
+}
+
+.nav .container .bar i
+{ 
+	padding: 17px 5px;
+	cursor: pointer;
+}
+
+.nav .container .bar ul
+{
+	width: 100%;
+	left: 0;
+	top: 60px;
+	padding: 10px;
+	border-top: 2px solid turquoise;
+	position: absolute;
+	background-color: teal;
+}
+
+.nav .container .bar ul li
+{
+   width: 100%;
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+           border-radius: 10px;
+   background-color: white;
+   margin-bottom: 5px;
+   padding: 5px;
+}
+
+.nav .container .bar ul li a
+{
+   width: 100%;
+   display:inline-block;
+   height: 100%;
+   color: teal;
+}
+
+@media(max-width: 767px)
+{
+	.nav .container .links 
+	{
+      display: none;
+	}
+	.nav .container .bar
+	{
+       display: block;
+	}
+}
+
+/* end the navbar */
+
+/*  start the slider */
+
+.slider
+{
+	background:url("../images/01.jpg") no-repeat center center fixed;
+	 -webkit-background-size: cover;
+	    -moz-background-size: cover;
+	         background-size: cover;
+	         height: 680px;
+}
+
+.slider .overlo
+{
+  background-color: rgba(0,0,0,.8);
+  padding: 100px 0;
+  color: white;
+}
+
+.slider .overlo .d1 h2
+{
+   font-size: 50px;
+}
+
+.slider .overlo .d1 h2 span
+{
+   color: teal;
+}
+
+.slider .overlo .d1 p
+{
+   color: #646161;
+}
+
+.slider .overlo .d1 > span 
+{
+   display: block;
+   height: 5px;
+   width: 80px;
+   background-color: white;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.slider .overlo .d1 > button 
+{ 
+  width: 120px;
+  padding: 5px 15px;
+  background: none;
+  border:1px solid teal;
+  cursor: pointer;
+  color: white;
+  margin-top: 21px;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.slider .overlo .d2
+{
+   padding: 50px 150px 0;
+}
+
+.slider .overlo .d2 h2
+{
+  text-transform: capitalize;
+}
+
+.slider .overlo .d2 h2 span
+{
+  color: teal;
+}
+
+
+.slider .overlo .d2 form div
+{
+  position: relative;
+  width: 100%;
+  height: 44px;
+  margin-bottom: 10px; 
+  border:1px solid white;
+     -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.slider .overlo .d2 form div input
+{
+  position: relative;
+  width: 100%;
+  height:100%;
+  border: none;
+  z-index: 5;
+  padding: 10px 15px;
+  background:transparent;
+  color: white;
+}
+
+.slider .overlo .d2 form div span
+{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 15px;
+  top: 12px;
+  color: #646161;
+  text-transform: capitalize;
+  	-webkit-transition: all .7s ease-in-out;
+	        transition: all .7s ease-in-out;
+}
+
+.slider .overlo .d2 form button
+{
+
+  width: 100%;
+  padding: 13px 15px;
+  background-color: teal; 
+  color:white;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+     -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+
+@media(max-width: 991px)
+{
+	.slider
+	{
+     height: 900px;
+	}
+	.slider .overlo
+	{
+	  padding: 10px 0;
+	}	
+	.slider .overlo .d1, 
+	.slider .overlo .d2 
+	{
+	   float: none;
+	   width: 100%;
+	}
+	.slider .overlo .d2
+	{
+	   padding: 30px 100px 0 50px;
+	}
+	
+	.slider .overlo .d2 h2
+	{
+	   text-align: start;
+	}
+	
+}
+
+@media(min-width: 991.1px) and (max-width: 1199px)
+{
+	.slider .overlo .d2
+	{
+	padding: 50px 100px 0;
+	}
+	
+}
+/* end the slider */
+/* start the social */
+
+.social
+{
+	background-color: white;
+	padding: 10px 0;
+}
+
+.social .info .h1
+{
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+
+.social .info p
+{
+	color: #818181;
+}
+
+.social .icons
+{
+	padding: 50px 0 0;
+	text-align: center;
+}
+
+.social .icons a
+{
+	color: #818181;
+}
+
+.social .icons a:nth-of-type(even)
+{
+	color: teal;
+}
+
+
+@media(max-width: 767px)
+{
+	.social .icons
+	{
+		padding: 5px 0 0;
+	}
+}
+
+/* end the social */
+/* start the effect */
+
+.effect
+{
+	background-color: #EEE;
+	color: white;
+	padding: 80px 0; 
+}
+
+.effect .tabs 
+{
+	width: 10%;	
+	margin-right: 10px; 
+}
+
+.effect .tabs > div:not(:last-of-type)
+{
+	height: 100px;
+	width: 130px;
+	padding: 40px 20px;
+	cursor: pointer;
+	background-color: black;
+     -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;   
+            border-radius: 5px;	
+}
+
+.effect .tabs > div:not(:last-of-type)
+{
+  	margin-bottom: 20px;
+}
+
+.effect .tabs > div.active
+{
+	background-color: teal;
+}
+
+.effect .tabs2 
+{
+	width: 86%;	
+	padding: 0 50px;
+}
+
+.effect .tabs2 .info2 h2
+{
+	margin: 0;
+	color: black;
+}
+
+.effect .tabs2 .info2 p
+{
+	color: #818181;
+}
+
+.effect .tabs2 .info2 button
+{
+  width: 120px;
+  padding: 5px 15px;
+  background: none;
+  border:1px solid teal;
+  cursor: pointer;
+  color: black;
+  margin-top: 21px;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.effect .tabs2 .im
+{
+   width: 40%;
+   padding: 0 20px;
+   height: 50%;
+}
+
+.effect .tabs2 .im img
+{
+   width: 100%;
+   height: 60%;
+   -webkit-box-shadow: 2px 2px 5px 5px white,
+                       -2px -2px 5px 5px white;
+      -moz-box-shadow: 2px 2px 5px 5px white,
+                       -2px -2px 5px 5px white;
+           box-shadow: 2px 2px 5px 5px white,
+                       -2px -2px 5px 5px white;                                              
+}
+
+@media(max-width: 991px)
+{
+
+	.effect
+	{
+		padding: 20px 0; 
+	}
+	
+	.effect .tabs 
+	{
+	   width: 100%;
+		float: none;
+		padding: 0;
+		margin-bottom: 50px;	
+	}
+	
+	.effect .tabs > div:not(:last-of-type)
+	{
+		float: left;
+		height: 100px;
+		width: 100px;				
+	}
+	.effect .tabs > div:not(:last-of-type)
+	{
+	  	margin-bottom: 0;
+	  	margin-right: 4px;
+	}			
+	
+	.effect .tabs2 
+	{
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	.effect .tabs2 .im
+	{
+	   padding: 0;
+	}	
+}
+
+/* end the effect */
+/* start the fashion */
+
+.fashion
+{  
+	background-color: #AAA;
+	padding: 80px 0;
+}
+
+.fashion .container > div:first-of-type span
+{ 
+   display: block; 
+   background-color: teal;
+   height: 3px;
+   width: 20%;
+}
+
+.fashion .container > div:nth-of-type(2) 
+{ 
+  padding: 30px 20px; 
+}
+.fashion .container > div:nth-of-type(2)  img
+{ 
+  max-height:100%;
+  max-width: 50%;
+-webkit-box-shadow: 2px 2px 5px 5px white,
+                    -2px -2px 5px 5px white;
+   -moz-box-shadow: 2px 2px 5px 5px white,
+                    -2px -2px 5px 5px white;
+        box-shadow: 2px 2px 5px 5px white,
+                    -2px -2px 5px 5px white;   
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;   
+            border-radius: 10px;    
+}
+
+
+@media(max-width: 991px)
+{	
+		.fashion
+		{ 
+	      padding: 30px 0;
+		}
+ 
+		.fashion .container > div:first-of-type 
+		{ 
+		   width: 100%;
+		   float:none;
+		   height: 50%;
+		}
+
+		.fashion .container > div:nth-of-type(2) 
+		{ 
+		   width: 100%;
+		   float:none;
+		   height:50%;
+		} 	
+}
+
+/* end the fashion */
+/* start the fashion2 */
+.fashion2
+{
+	background-color: white;
+	padding: 50px 0;
+}
+
+.fashion2 .container > div:first-of-type
+{ 
+  padding: 100px 20px 0; 
+}
+.fashion2 .container > div:first-of-type  img
+{ 
+  max-height: 100%;
+  max-width: 50%;
+-webkit-box-shadow: 2px 2px 5px 5px #AAA,
+                    -2px -2px 5px 5px #AAA;
+   -moz-box-shadow: 2px 2px 5px 5px #AAA,
+                    -2px -2px 5px 5px #AAA;
+        box-shadow: 2px 2px 5px 5px #AAA,
+                    -2px -2px 5px 5px #AAA;    
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;   
+            border-radius: 10px;    
+}
+
+.fashion2 .container > div:nth-of-type(2) 
+{     
+  padding: 0 10px;
+}
+
+.fashion2 .container > div:nth-of-type(2) span 
+{ 
+   display: block; 
+   background-color: teal;
+   height: 3px;
+   width: 20%;
+   margin: 10px 0;
+}
+
+.fashion2 .container > div:nth-of-type(2) p
+{ 
+    color: #818181;
+}
+
+.fashion2 .container > div:nth-of-type(2) > div 
+{ 
+  width: 100%; 
+}
+
+.fashion2 .container > div:nth-of-type(2) > div:first-of-type 
+{ 
+  margin-bottom: 10px;
+}
+
+.fashion2 .container > div:nth-of-type(2) > div > i
+{ 
+  width: 60px; 
+  height: 60px;  
+  padding: 12px 10px;
+  margin-right: 5%; 
+  margin-top: 10px;
+  color: teal;
+  border: 1px solid teal;
+   -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;   
+            border-radius: 50%;
+}
+
+.fashion2 .container > div:nth-of-type(2) > div > div:first-of-type
+{ 
+  width: 79%;    
+}
+
+.fashion2 .container > div:nth-of-type(2) > div > div:first-of-type > h2
+{ 
+  margin:0;
+}
+
+.fashion2 .container > div:nth-of-type(2) > div > div:first-of-type > p
+{ 
+  margin: 0 0; 
+  color: #818181;
+}
+
+
+@media(max-width: 991px)
+{	 
+		.fashion2 .container > div:first-of-type 
+		{ 
+		   width: 100%;
+		   float:none;
+		   height: 30%;
+		   padding: 10px 10px;   
+		}
+
+		.fashion2 .container > div:nth-of-type(2) 
+		{ 
+		   width: 100%;
+		   float:none;
+		   height:50%;
+		   padding: 15px 10px;
+		} 	
+		
+		.fashion2 .container > div:nth-of-type(2)  h2
+		{ 
+         margin: 0;
+		} 	
+		.fashion2 .container > div:nth-of-type(2) > div > div:first-of-type
+		{ 
+		  width: 79%;    
+		  margin-bottom: 5px;
+		}		
+		
+		.fashion2 .container > div:nth-of-type(2) > div > i
+		{ 
+		  width: 60px;
+		  margin-right: 2%;
+		  height: 60px;  
+		  padding: 12px 10px;
+		}		
+					
+} 
+
+
+/* end the fashion2 */
+/* start the awesome */
+
+.awesome
+{
+	background-color: #AAA;
+	padding: 50px 0 ; 
+}
+
+.awesome .container h2
+{
+ margin: 0;
+ text-transform: uppercase;
+}
+
+.awesome .container span
+{
+  width: 8%;
+  height: 4px;
+  margin: 20px auto;
+  display: block;
+  background-color: teal;
+}
+
+.awesome .container > div > div:not(:last-of-type) i
+{
+   width: 70px;
+   height: 50px;
+   padding: 8px 0;
+   color: teal;
+   margin-bottom: 20px; 
+   border: 3px solid teal; 
+    -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;   
+            border-radius: 50%;  
+}
+
+.awesome .container > div > div:nth-of-type(3)
+{
+  width: 32%;
+}
+
+@media(max-width: 767px)
+{	 
+	.awesome .container > div > div 
+	{
+      float: none;
+      width: 100%;
+	} 
+	.awesome .container > div > div:nth-of-type(3)
+	{
+	  width: 100%;
+	}						
+} 
+
+/* end the awesome */
+/* start the pricing */
+
+.pricing
+{
+	background-color: #EEE;
+	color: #818181;
+	padding: 40px 0;
+}
+
+.pricing .container > h2
+{
+ margin: 0;
+ text-transform: uppercase;
+}
+
+.pricing .container > span
+{
+  display: block;
+  width: 8%;
+  height: 4px;
+  background-color: white;
+  margin: 20px auto;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;  
+}
+
+.pricing .container > p
+{
+   margin: 0;
+   margin-bottom: 60px; 
+}
+
+.pricing .container > .price > div:not(:last-of-type)
+{
+  padding: 50px 50px;
+}
+
+.pricing .container > .price > div:nth-of-type(2)
+{
+   padding: 0 50px; 
+}
+
+.pricing .container > .price > div:nth-of-type(2) > span
+{
+  font-size: 18px;
+  display: block;
+  font-style: italic;
+  background-color: teal;
+  color: #dec5c5;
+  padding: 10px 15px;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > h2
+{
+  margin: 0;
+  height: 30px;
+  color: white;
+  background-color: tomato;
+  border-bottom: 2px solid teal;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > p 
+{
+  margin: 0;
+  height: 120px;
+  color: white;
+  background-color: tomato;
+  border-bottom: 5px solid teal;
+  padding: 10px 0;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > p span
+{  
+  display: block;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > p span:first-of-type
+{  
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > p span:last-of-type
+{  
+  color: #dec5c5;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.pricing .container > .price > div:not(:last-of-type) > ul li
+{
+  width: 100%;
+  padding: 10px 15px;
+  background-color: white;
+  border-bottom: 2px solid #818181;
+}
+
+.pricing .container > .price > div:nth-of-type(3)
+{
+  width: 32%;
+}
+
+@media(max-width: 767px)
+{	
+
+	.pricing .container > .price > div:not(:last-of-type)
+	{
+     float: none;
+     width: 100%;
+     padding: 0 40px;
+     margin-bottom: 15px;
+	}	
+	.pricing .container > .price > div:nth-of-type(3)
+	{
+	  width: 100%;
+	}	
+
+	.pricing .container > .price > div:nth-of-type(2)
+	{
+	  padding: 0 40px; 
+	}
+					
+} 
+
+@media(min-width: 767.1px) and (max-width: 991px)
+{	
+	.pricing .container > .price > div:not(:last-of-type)
+	{
+     float: none;
+     width: 100%;
+     padding: 0 100px;
+     margin-bottom: 15px;
+	}	
+	.pricing .container > .price > div:nth-of-type(3)
+	{
+	  width: 100%;
+	}	
+
+	.pricing .container > .price > div:nth-of-type(2)
+	{
+   	padding: 0 100px; 
+	}
+					
+} 
+
+/* end the pricing */
+/* start the testimonials*/
+
+.testimonials
+{
+	background-color: teal;
+	color: #e6e2e2;
+	padding: 50px 0; 
+}
+
+.testimonials .container > h2
+{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.testimonials .container > span
+{
+  display: block;
+  width: 8%;
+  height: 4px;
+  background-color: white;
+  margin: 20px auto;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.testimonials .container > p
+{
+   margin: 0;
+   margin-bottom: 60px; 
+}
+
+.testimonials .container > .test > .test1:not(:nth-of-type(3))
+{
+  width: 25%;
+  margin-right: 12.5%; 
+  background-color: darkcyan;
+  padding: 10px; 
+}
+
+.testimonials .container > .test > .test1:nth-of-type(3)
+{
+  width: 25%;
+  background-color: darkcyan;
+  padding: 10px;
+}
+
+.testimonials .container > .test > .test1 > p
+{
+  padding: 10px;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;  
+}
+
+.testimonials .container > .test > .test1 > div > img
+{
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  height: 90px;
+  border: 1px solid #e6e2e2;
+   -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;   
+            border-radius: 50%;  
+}
+
+.testimonials .container > .test > .test1 > div > div:first-of-type
+{
+  width: 40%;
+  height: 90px;
+  float: left;
+  padding:22px 0;
+}
+
+.testimonials .container > .test > .test1 > div > div:first-of-type > h2
+{
+  margin:0;
+}
+
+.testimonials .container > .test > .test1 > div > div:first-of-type > span
+{
+  display: block;
+   color: #EEE;
+}
+@media(max-width: 991px)
+{
+	.testimonials .container > .test > .test1:not(:nth-of-type(3))
+	{ 
+	  float:none;
+	  width: 100%;
+	  margin-right: 0;
+	  margin-bottom: 10px; 
+	}
+
+	.testimonials .container > .test > .test1:nth-of-type(3)
+	{
+	  float:none;
+	  width: 100%;
+	  margin-right: 0; 
+	}
+					
+} 
+
+/* end the testimoniala */
+/* start the style */
+
+.style 
+{
+	background:url("../images/04.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	        background-size: cover;
+}
+
+.style .overlo
+{
+	background-color: rgba(0,0,0,.8);
+	padding: 50px 0;
+	color: white;
+	height: auto;
+}
+
+.style .overlo h2
+{
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.style .overlo span
+{
+  display: block;
+  width: 8%;
+  height: 4px;
+  margin: auto;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.style .overlo button
+{
+  width: 120px;
+  padding: 5px 15px;
+  background: none;
+  border:1px solid teal;
+  cursor: pointer;
+  color: white;
+  margin-top: 80px;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+/* end the style */
+/* start the conatct */
+
+.contact
+{
+	padding: 50px  16%;
+}
+
+.contact .container h2
+{
+   margin:0;
+   text-transform: uppercase;
+}
+
+.contact .container span
+{
+  display: block;
+  width: 8%;
+  height: 4px;
+  background-color: teal;
+  margin: 20px auto;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px;
+}
+
+.contact .container > div
+{
+   width: 45%;
+}
+
+.contact .container > div:first-of-type
+{
+	margin-right: 10%;
+	 width: 45%;
+}
+
+.contact .container > div:first-of-type input
+{
+	 width: 100%;
+	 margin-bottom: 20px;
+	 border: none;
+	 padding: 10px 15px; 
+	 background: none;
+	 border-bottom: 2px solid teal;
+	 border-left: 2px solid teal;
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;   
+            border-radius: 10px;	 	 
+}
+
+.contact .container > div:nth-of-type(2) textarea
+{
+	 width: 100%;
+	 padding: 10px 15px; 
+	 background: none;
+	 border: none;
+	 border-bottom: 2px solid teal;
+	 border-left: 2px solid teal;
+   -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;   
+            border-radius: 10px;	 
+}
+
+.contact .container > button
+{
+  width: 150px;
+  padding: 5px 15px;
+  background: none;
+  border:1px solid teal;
+  cursor: pointer;
+  color: teal;
+  margin: auto;
+   -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;   
+            border-radius: 5px; 
+}
+
+/* end the contact */
+/* start the footer  */
+
+.footer
+{
+	height: 80px;
+	padding: 25px 0;
+	font-size: 25px;
+	background-color: teal;
+}
+
+/* end the footer */
